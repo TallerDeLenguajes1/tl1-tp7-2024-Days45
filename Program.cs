@@ -14,7 +14,7 @@ while (siguiente)
     Console.WriteLine("4. dividir");
     Console.WriteLine("5. limpiar");
     Console.WriteLine("6. salir");
-    if (double.TryParse(Console.ReadLine(), out opcion))
+    if (int.TryParse(Console.ReadLine(), out opcion))
     {
         switch (opcion)
         {
@@ -67,6 +67,7 @@ while (siguiente)
             Console.WriteLine("Opción no válida. Intente nuevamente.");
             break;            
         }
+        Console.WriteLine($"Resultado actual: {calculadora.Resultado}");
     }else{
         Console.WriteLine("No es un valor valido.");
     }
